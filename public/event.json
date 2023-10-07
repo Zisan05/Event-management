@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Weddings",
+      "id":"1", 
+      "image": "https://i.ibb.co/yPmznfB/unsplash-image-1-Bs2s-Z9f-D2-Q.jpg",
+      "price": "$79",
+      "description": "Join us for make your wedding joyful !"
+    },
+    {
+      "name": "Birthday Parties",
+      "id":"2",
+      "image": "https://i.ibb.co/yF4r9Xy/Birthday-cake-with-candles.webp",
+      "price": "$50",
+      "description": "Join us to make your party unforgettable !"
+    },
+    {
+      "name": "Anniversaries Event",
+      "id":"3",
+      "image": "https://i.ibb.co/8r0ZnM6/360-F-426036393-N5-Uj-Hu-ILNAVf-Tqbct9s1e9d-HKMv6-Yzol.jpg",
+      "price": "$25",
+      "description": "Join us to make your event unforgettable !"
+    },
+    {
+      "name": "Engagement Parties",
+      "id":"4",
+      "image": "https://i.ibb.co/DW7wR7m/depositphotos-92773256-stock-photo-close-up-of-couple-hands.webp",
+      "price": "$99",
+      "description": "Join us to make your event unforgettable !"
+    },
+    {
+      "name": "Retirement Parties",
+      "id":"5",
+      "image": "https://i.ibb.co/QdkT1nF/group-of-seniors-at-the-coffee-table-at-a-birthday-party-in-the-retirement-home-PMJPB0.jpg",
+      "price": "$65",
+      "description": "join us to make your retirement party special !"
+    },
+    {
+      "name": "Baby shower",
+      "id":"6",
+      "image": "https://i.ibb.co/jkMVjVR/women-toasting-juices-baby-shower-party-group-friends-having-109381839.jpg",
+      "price": "$10",
+      "description": "join us to make your Baby shower  party special !"
+    }
+  ]
+  
