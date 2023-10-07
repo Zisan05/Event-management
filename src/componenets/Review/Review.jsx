@@ -2,12 +2,12 @@
 
 const Review = () => {
     return (
-        <div className="hero h-[1300px] md:h-[400px] lg:h-[400px] mt-[100px] mb-[100px]" style={{backgroundImage: 'url(https://i.ibb.co/NF8dnf2/corporate-event-management-service-500x500.webp)'}}>
+        <div className="hero w- h-[1300px] md:h-[400px] lg:h-[400px] mt-[100px] mb-[100px]" style={{backgroundImage: 'url(https://i.ibb.co/NF8dnf2/corporate-event-management-service-500x500.webp)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="">
       <h1 className="  text-5xl font-bold">People Review</h1>
-      <div className="flex flex-col md:flex-row lg:flex-row lg:gap-[100px]">
+      <div className="flex flex-col md:flex-row lg:flex-row md:gap-[30px] lg:gap-[100px]">
         <div>
             <img className="h-[150px] w-[150px] rounded-[50%] mt-[20px] ml-[70px] md:ml-[0px] lg:ml-[0px]" src="https://i.ibb.co/3mjBySk/depositphotos-361909184-stock-photo-portrait-of-handsome-doctor-or.webp" alt="" />
             <p className="font-bold text-[25px]">David</p>

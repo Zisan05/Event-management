@@ -19,9 +19,15 @@ const Home = () => {
   </div>
 </div>
 
+<h1 className='font-bold text-[40px] text-center underline'>Our Promise</h1>
+<div className='flex flex-col md:flex-col lg:flex-row justify-around items-center'>
+<div className=''>
+ <h1 className="text-[20px] md:text-[30px] lg:text-[35px] text-center font-extrabold text-blue-300 mt-[30px]">Let us manage your event... </h1>
+ <h1 className="text-[20px] md:text-[30px] lg:text-[35px] text-center font-extrabold text-orange-400">And its our promise to make your event that <br /> <span className="text-gray-800">much memorable that you never forget...</span> </h1>
+ </div>
 
-    <h1 className="text-[35px] text-center font-extrabold text-blue-300 mt-[30px]">Let us manage your event... </h1>
- <h1 className="text-[35px] text-center font-extrabold text-orange-400">And its our responsibility to make your event that <br /> <span className="text-gray-800">much memorable that you never forget...</span> </h1>
+ <img className=' md:w-[400px] lg:w-[500px]' src="https://i.ibb.co/DpzL9Ls/our-promise-sign-d-letters-blocks-spelling-words-i-white-background-43160777.webp" alt="" />
+</div>
 
  <h1 className="text-[40px] text-center mt-[100px] mb-[40px] font-bold text-blue-300 underline">Our Services</h1>
 
