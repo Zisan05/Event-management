@@ -12,6 +12,7 @@ import Register from './componenets/Register/Register';
 import Login from './componenets/Login/Login';
 import AuthProvider from './componenets/Provider/AuthProvider';
 import CardsDetails from './componenets/CardsDetails/CardsDetails';
+import PrivetRoute from './componenets/PrivetRoute/PrivetRoute';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
 
 {
     path: '/details/:id',
-    element:<CardsDetails></CardsDetails>,
+    element:<PrivetRoute><CardsDetails></CardsDetails></PrivetRoute>,
     loader: ()=> fetch('/event.json')
 },
 

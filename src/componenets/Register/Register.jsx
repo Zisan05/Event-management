@@ -96,7 +96,7 @@ const Register = () => {
                     </div>
                      <span className="relative" onClick={ () => SetShowPassword(!ShowPassword)    
                      }>
-                         <div className=" absolute left-[220px] md:left-[460px] lg:left-[460px] bottom-[16px]">
+                         <div className=" relative left-[220px] md:left-[460px] lg:left-[460px] bottom-[30px]">
                          {
                               ShowPassword ? <FaRegEye></FaRegEye> : <FaRegEyeSlash></FaRegEyeSlash>
                          }
@@ -106,7 +106,7 @@ const Register = () => {
                      
                     <p>The account is already exist please go <Link className="text-blue-600" to ={'/login'}>Login</Link> </p>
                               {
-                                   ErrorMsg && <p className="text-red-600">
+                                   ErrorMsg && <p className=" text-red-600">
                                         {ErrorMsg}
                                    </p>
                               }

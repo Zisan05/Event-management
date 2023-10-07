@@ -1,5 +1,7 @@
 import {useLoaderData}  from 'react-router-dom'
 import Card from '../Card/Card';
+import Review from '../Review/Review';
+import Footer from '../Footer/Footer';
 const Home = () => {
 
      const data = useLoaderData();
@@ -28,7 +30,12 @@ const Home = () => {
         data.map(data => <Card key = {data.id} data = {data}></Card>)
     }
  </div>
+ <div>
+  <Review></Review>
+ </div>
  
+
+ <Footer></Footer>
         </div>
     );
 };

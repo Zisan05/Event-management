@@ -78,14 +78,14 @@ const Login = () => {
                  <div className="form-control mt-6">
 
                  {
-                                   ErrorMsg && <p className="text-red-600">
+                                   ErrorMsg && <p className="relative text-red-600">
                                         {ErrorMsg}
                                    </p>
                               }
 
 <span className="relative" onClick={ () => SetShowPassword(!ShowPassword)    
                      }>
-                         <div className=" absolute left-[210px] md:left-[460px] lg:left-[460px] bottom-[155px] md:bottom-[85px]  lg:bottom-[85px]">
+                         <div className=" absolute left-[210px] md:left-[460px] lg:left-[460px] bottom-[85px] md:bottom-[65px]  lg:bottom-[65px]">
                          {
                               ShowPassword ? <FaRegEye></FaRegEye> : <FaRegEyeSlash></FaRegEyeSlash>
                          }
