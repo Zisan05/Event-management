@@ -13,16 +13,20 @@ import Login from './componenets/Login/Login';
 import AuthProvider from './componenets/Provider/AuthProvider';
 import CardsDetails from './componenets/CardsDetails/CardsDetails';
 import PrivetRoute from './componenets/PrivetRoute/PrivetRoute';
+import Errorpage from './componenets/ErrorPage/Errorpage';
+import Gallery from './componenets/Gallery/Gallery';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<Errorpage></Errorpage>,
     children:[
 {
     path:"/",
     element:<Home></Home>,
     loader: ()=> fetch('/event.json')
+    
 },
 
 {
@@ -38,6 +42,12 @@ const router = createBrowserRouter([
 {
     path:"/login",
     element:<Login></Login>
+},
+{
+    path:"/gallery",
+    element:<PrivetRoute><Gallery></Gallery></PrivetRoute>,
+    loader: ()=> fetch('/gallery.json')
+
 },
 
     ]

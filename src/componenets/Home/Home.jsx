@@ -21,7 +21,7 @@ const Home = () => {
 
 <h1 className='font-bold text-[40px] text-center underline'>Our Promise</h1>
 <div className='flex flex-col md:flex-col lg:flex-row justify-around items-center'>
-<div className=''>
+<div>
  <h1 className="text-[20px] md:text-[30px] lg:text-[35px] text-center font-extrabold text-blue-300 mt-[30px]">Let us manage your event... </h1>
  <h1 className="text-[20px] md:text-[30px] lg:text-[35px] text-center font-extrabold text-orange-400">And its our promise to make your event that <br /> <span className="text-gray-800">much memorable that you never forget...</span> </h1>
  </div>
@@ -35,6 +35,7 @@ const Home = () => {
     {
         data.map(data => <Card key = {data.id} data = {data}></Card>)
     }
+    
  </div>
  <div>
   <Review></Review>

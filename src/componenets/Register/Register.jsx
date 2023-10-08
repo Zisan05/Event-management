@@ -7,11 +7,27 @@ import { FaRegEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
 
-     const {CreateUser} = useContext(AuthContext);
+     const {CreateUser,UpdateProfile,GoogleUser} = useContext(AuthContext);
 
      const [ErrorMsg , setErrorMsg] = useState('')
 
      const [ShowPassword, SetShowPassword] = useState(false)
+     const handleGoogle = () =>{
+
+          GoogleUser()
+          .then(result => {
+               console.log(result.user)
+               Swal.fire(
+                    'success',
+                    'Successfully added your account',
+                    'success'
+                  )
+          })
+          .catch(error => {
+               console.log(error.message)
+               setErrorMsg("Your Email or Password is invalid please check your Email or Password")
+          })
+     }
     
 
      const handleRegister = e =>{
@@ -22,6 +38,10 @@ const Register = () => {
 
 
      const email = e.target.email.value;
+     const name = e.target.name.value;
+     const photo = e.target.photo.value;
+
+     console.log(name,photo)
      const password = e.target.password.value;
      console.log(email,password);
      if (password.length < 6) {
@@ -38,6 +58,11 @@ const Register = () => {
      CreateUser(email,password)
      .then(result => {
           console.log(result.user)
+          UpdateProfile(name,photo)
+          .then((result)=>{
+               console.log(result)
+          })
+          
           Swal.fire(
                'success',
                'Successfully added your account',
@@ -65,6 +90,17 @@ const Register = () => {
                               type="text"
                               name="name"
                               placeholder="Your name"
+                              className="input input-bordered"
+                         />
+                    </div>
+                    <div className="form-control">
+                         <label className="label">
+                              <span className="label-text">Photo URL</span>
+                         </label>
+                         <input
+                              type="text"
+                              name="photo"
+                              placeholder="Your photo"
                               className="input input-bordered"
                          />
                     </div>
@@ -113,6 +149,7 @@ const Register = () => {
                     
                     <div className="form-control mt-6">
                          <button className="btn bg-orange-400 font-bold text-black">Register</button>
+                         <button onClick={handleGoogle} className="btn bg-blue-500 font-bold text-white">Google login</button>
                     </div>
                </form>
         </div>

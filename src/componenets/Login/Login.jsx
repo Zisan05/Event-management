@@ -8,10 +8,27 @@ import { FaRegEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
 
-     const {LoginUser} = useContext(AuthContext)
+     const {LoginUser,GoogleUser} = useContext(AuthContext)
      const [ErrorMsg , setErrorMsg] = useState('')
 
      const [ShowPassword, SetShowPassword] = useState(false)
+     
+const handleGoogle = () =>{
+
+     GoogleUser()
+     .then(result => {
+          console.log(result.user)
+          Swal.fire(
+               'success',
+               'Successfully added your account',
+               'success'
+             )
+     })
+     .catch(error => {
+          console.log(error.message)
+          setErrorMsg("Your Email or Password is invalid please check your Email or Password")
+     })
+}
 
      const handleLogin = e =>{
 
@@ -94,6 +111,8 @@ const Login = () => {
                          </span>
                               
                       <button className="btn bg-orange-400 font-bold text-black">Login</button>
+                      <button onClick={handleGoogle} className="btn bg-blue-500 font-bold text-white">Google login</button>
+
                  </div>
             </form>
      </div>

@@ -30,6 +30,8 @@ const handleLogout = () =>{
     <li><NavLink to ={'/'}>Home</NavLink></li>
     <li><NavLink to ={'/register'}>Register</NavLink></li>
     <li><NavLink to ={'/login'}>Login</NavLink></li>
+
+    <li><NavLink to ={'/gallery'}>Gallery</NavLink></li>
     </>
     return (
         <div className="navbar bg-blue-300">
@@ -50,10 +52,10 @@ const handleLogout = () =>{
      {NavItem}
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end ">
 
     {
-      User ? <p>{User.photoURL}{User.email}  <button className="btn bg-orange-400" onClick={handleLogout}>Sign out</button></p> :
+      User ?<div className="flex gap-[10px]"><p className="my-auto font-bold text-[20px] ">{User.displayName}</p><img className="h-[50px] w-[50px] rounded-[50%]" src={User.photoURL}></img><button className="btn bg-orange-400" onClick={handleLogout}>Sign out</button></div>  :
       <button className="btn bg-orange-400"><Link to ={'/login'}>Log in </Link></button>
     }
     
