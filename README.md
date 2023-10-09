@@ -1,3 +1,7 @@
+# Event-Management
+- [For live link click here](http://fanatical-bears.surge.sh/)
+
+
 1st Question answer: A:{} because we set the greetign variable with a empty object. 
 
 2nd Question answer: C:"12" because the value of a is a number and the value of b is a string.
@@ -9,7 +13,7 @@
 5th Question answer: C:3 because the count variable is increase every time when the nums is true and nums array true for every element except 1st element.
 
 
-features of Projects:
+Features of Projects:
 
 1.I have a register page where you can register your account for visit properly my project
 
@@ -22,5 +26,7 @@ features of Projects:
 5.Without login you also can not visit the gallery page and Event handlers page.
 
 6.You can login or register you account by you gmail also.
+
+
 
 
