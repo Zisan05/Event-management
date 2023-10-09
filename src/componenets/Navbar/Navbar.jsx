@@ -32,6 +32,7 @@ const handleLogout = () =>{
     <li><NavLink to ={'/login'}>Login</NavLink></li>
 
     <li><NavLink to ={'/gallery'}>Gallery</NavLink></li>
+    <li><NavLink to ={'/workers'}>Our event handlers</NavLink></li>
     </>
     return (
         <div className="navbar bg-blue-300">
@@ -45,7 +46,7 @@ const handleLogout = () =>{
              {NavItem}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Social Events</a>
+    <a className="btn btn-ghost normal-case text-xl relative right-[30px]  md:right-[0px] lg:right-[0px]">Social Events</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -55,7 +56,7 @@ const handleLogout = () =>{
   <div className="navbar-end ">
 
     {
-      User ?<div className="flex gap-[10px]"><p className="my-auto font-bold text-[20px] ">{User.displayName}</p><img className="h-[50px] w-[50px] rounded-[50%]" src={User.photoURL}></img><button className="btn bg-orange-400" onClick={handleLogout}>Sign out</button></div>  :
+      User ?<div className="md:flex lg:flex  gap-[10px]"><p className="my-auto font-bold text-[15px] ">{User.displayName}</p><img className="h-[50px] w-[50px] rounded-[50%]" src={User.photoURL}></img><button className="btn bg-orange-400" onClick={handleLogout}>Sign out</button></div>  :
       <button className="btn bg-orange-400"><Link to ={'/login'}>Log in </Link></button>
     }
     

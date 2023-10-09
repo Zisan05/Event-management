@@ -15,6 +15,7 @@ import CardsDetails from './componenets/CardsDetails/CardsDetails';
 import PrivetRoute from './componenets/PrivetRoute/PrivetRoute';
 import Errorpage from './componenets/ErrorPage/Errorpage';
 import Gallery from './componenets/Gallery/Gallery';
+import Workers from './componenets/Workers/Workers';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
     loader: ()=> fetch('/gallery.json')
 
 },
+{
+   path:"/workers",
+   element:<PrivetRoute><Workers></Workers></PrivetRoute>
+}
 
     ]
   },
